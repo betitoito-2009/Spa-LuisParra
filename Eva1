@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e2e0fa;
+      margin: 20px;
+      color: #004d40;
+    }
+
+    h1, h2 {
+      color: #000000;
+    }
+
+   
+    table {
+      border: 1px solid #234d00;
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #004d40;
+      padding: 8px;
+      text-align: left;
+    }
+
+    ul {
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+
+    form {
+      background-color: #b2dfdb;
+      padding: 15px;
+      max-width: 400px;
+      border: 1px solid #004d40;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 5px;
+      border: 1px solid #004d40;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    button {
+      margin-top: 15px;
+      background-color: #004d40;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 3px;
+    }
+
+    button:hover {
+      background-color: #00332f;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bienvenido</h1>
+
+  <h2>Información</h2>
+  <p>Estos son algunos puntos importantes:</p>
+  <ul>
+    <li>Servicio rápido</li>
+    <li>Atención personalizada</li>
+    <li>Precios competitivos</li>
+  </ul>
+
+  <h2>Lista de Precios</h2>
+  <table>
+    <tr>
+      <th>Producto</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+    </tr>
+    <tr>
+      <td>Esmeril</td>
+      <td>10000 rpm</td>
+      <td>$10</td>
+    </tr>
+    <tr>
+      <td>Martillo</td>
+      <td>Cabezal de goma</td>
+      <td>$20</td>
+    </tr>
+  </table>
+
+  <img src="https://portales.inacap.cl/Assets/uploads/images/logo-inacap-sobr-nosotros.jpg" alt="logo inacap" />
+  
+
+  <h2>Contáctanos</h2>
+  <form>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required />
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
